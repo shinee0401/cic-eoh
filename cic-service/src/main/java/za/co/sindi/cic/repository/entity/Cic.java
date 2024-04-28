@@ -81,6 +81,10 @@ public class Cic implements Serializable {
 		this.cicId = cicId;
 	}
 
+    public void updateCICId(long prevId)
+    {
+        this.cicId = prevId;
+    }
 	/**
 	 * @return the cicType
 	 */
@@ -156,6 +160,10 @@ public class Cic implements Serializable {
 	}
 
 	public void setEntity(za.co.sindi.cic.repository.entity.Entity entity) {
+		this.entity = entity;
+	}
+
+	public void updateEntity(za.co.sindi.cic.repository.entity.Entity entity){
 		this.entity = entity;
 	}
 }
